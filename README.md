@@ -195,8 +195,10 @@ if 명령문을 통해 활용 가능
 txt = "안녕하세요, 반갑습니다"
 if "고마워요" not in txt:
     print("No, '고마워요' is NOT present.")
+    
 def my_function():
   print("Hello from a function")
+  
 def my_function(fname):
   print(fname + " Refsnes")
 
@@ -207,4 +209,17 @@ def my_function(fname, lname):
   print(fname + " " + lname)
 
 my_function("Emil", "Refsnes")
+
+def my_function(*kids):
+  print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")
+
+def my_function(child3, child2, child1):
+  print("The youngest child is " + child3)
+
+my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")def my_function(child3, child2, child1):
+  print("The youngest child is " + child3)
+
+my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
 

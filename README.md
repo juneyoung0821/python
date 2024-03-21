@@ -195,3 +195,16 @@ if 명령문을 통해 활용 가능
 txt = "안녕하세요, 반갑습니다"
 if "고마워요" not in txt:
     print("No, '고마워요' is NOT present.")
+def my_function():
+  print("Hello from a function")
+def my_function(fname):
+  print(fname + " Refsnes")
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Emil", "Refsnes")
+
